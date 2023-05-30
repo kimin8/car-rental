@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Car Rental</title>
+</head>
+
+<body>
+    <header class="navigation">
+        <div class="logo-name">
+            <i class="fa-solid fa-car-on"></i>
+            <h1 class="company-name">Car Rental</h1>
+        </div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Vehicle Models</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="login-register">
+            <a href="#" class="sign-in"><button>Sign in</button></a>
+            <a href="#" class="register"><button>Register</button></a>
+        </div>
+    </header>
+
+    <section id="hero-page">
+        <div class="container1">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="text">
+                        <p class="slogan">Plan your trip now</p>
+                        <p class="big-text">Save <span class="colored-word">big</span> with our car rental</p>
+                        <p class="smaller-text">Rent the car of your dreams. Unbeatable prices, unlimited miles, flexible
+                            pick-up conditions and much more.</p>
+        
+                        <div class="hero-buttons">
+                            <button class="book-ride">Book Ride
+                                <i class="fa-solid fa-circle-check"></i>
+                            </button>
+                            <button class="learn-more">Learn More
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="images/car.png" alt="car" class="car-picture">
+            </div>
+        </div>
+    </section>
+    <section id="book-a-car">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <h2 class="book-a-car-title">Book a car</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4 class="header-car-title">
+                        <i class="fa-solid fa-car"></i>
+                        Select Your Car Type <span class="star">*</span></h4>
+                    <select class="car-type">
+                        <option value="">Select your car type...</option>
+                        <option value="">car</option>
+                        <option value="">car</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="header-car-title">
+                        <i class="fa-sharp fa-solid fa-location-dot"></i>
+                        Pick-up Location <span class="star">*</span></h4>
+                    <select class="car-type">
+                        <option value="">Select pick-up location...</option>
+                        <option value="">car</option>
+                        <option value="">car</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="header-car-title">
+                        <i class="fa-sharp fa-solid fa-location-dot"></i>
+                        Drop-off Location <span class="star">*</span></h4>
+                    <select class="car-type">
+                        <option value="">Select drop-off location</option>
+                        <option value="">car</option>
+                        <option value="">car</option>
+                        <option value="">car</option>
+                    </select>
+                </div>
+            </div>
+            <div class="empty-space"></div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4 class="header-car-title">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        Pick-up Date <span class="star">*</span></h4>
+                    <input type="date" id="pickup-date" name="pickup-date">
+                </div>
+                <div class="col-md-4">
+                    <h4 class="header-car-title">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        Drop-off Date <span class="star">*</span></h4>
+                    <input type="date" id="dropof-date" name="dropof-date">
+                </div>
+                <div class="col-md-4">
+                    <button class="search">Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 1000
+        });
+    </script>
+</body>
+
+</html>

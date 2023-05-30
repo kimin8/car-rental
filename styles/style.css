@@ -1,0 +1,215 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+li, a, .sign-in > button, .register > button  {
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo-name {
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.fa-car-on {
+    font-size: 40px;
+    color: #ff3714;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    padding: 0px 20px;
+    display: inline-block;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: #ff3714;
+}
+
+.register > button {
+    padding: 9px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    background-color: #ff3714;
+    color: white;
+}
+
+.register > button:hover {
+    color:#ff3714;
+    background-color: white;
+}
+
+.sign-in > button {
+    border: none;
+    padding: 9px 25px;
+    border: 8px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.sign-in > button:hover {
+    transition: all 0.3 ease 0s;
+    color: #ff3714;
+}
+
+#hero-page {
+    width: 100%;
+    height: calc(100vh - 200px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text  {
+    width: 490px;
+}
+
+.slogan {
+    font-size: 20px;
+}
+
+.big-text {
+    margin-top: 10px;
+    font-size: 50px;
+    line-height: 60px;
+}
+
+.colored-word {
+    color: #ff3714;
+}
+
+.smaller-text {
+    font-size: 14px;
+    color: gray;
+    margin-top: 20px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.book-ride, .learn-more {
+    margin-top: 15px;
+    width: 170px;
+    height: 50px;
+}
+
+.book-ride {
+    padding: 9px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    background-color: #ff3714;
+    color: white;
+}
+
+.fa-circle-check {
+    font-size: 14px;
+    margin-left: 3px;
+}
+
+.learn-more {
+    padding: 9px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    background-color: black;
+    color: white;
+}
+
+.fa-chevron-right {
+    margin-left: 2px;
+}
+
+.car-picture {
+    height: auto;
+}
+
+#book-a-car {
+    margin-top: 100px;
+    margin-left: 11px;
+    margin-bottom: 100px;
+}
+
+.car-type {
+    width: 100%;
+    height: 30px;
+}
+
+.search {
+    width: 100%;
+    padding: 16px 0px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    background-color: #ff3714;
+    color: white;
+}
+
+.empty-space {
+    height: 35px;
+} 
+
+.header-car-title, .search {
+    margin-bottom: 10px;
+}
+.book-a-car-title {
+    font-weight: 800;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.header-car-title {
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.star {
+    color: red;
+}
+
+#dropof-date, #pickup-date {
+    width: 100%;
+}
+
+.fa-car, .fa-location-dot, .fa-calendar-days {
+    color: #ff3714;
+    margin-right: 3px;
+}
