@@ -24,10 +24,10 @@
 
         <nav>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Vehicle Models</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="/main.html">Home</a></li>
+                <li><a href="#info">About</a></li>
+                <li><a href="#vehicle-models">Vehicle Models</a></li>
+                <li><a href="#footer">Contact</a></li>
             </ul>
         </nav>
 
@@ -60,15 +60,19 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <img src="images/car.png" alt="car" class="car-picture">
+                <img src="images/hero-car.png" alt="car" class="car-picture">
             </div>
         </div>
     </section>
+
+    <button onclick="goToTop()" id="goToTopButton">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
     <section id="book-a-car">
-        <div class="container">
+        <div class="container" id="book">
             <div class="row">
                 <div class="col-md-12">
-
                     <h2 class="book-a-car-title">Book a car</h2>
                 </div>
             </div>
@@ -233,23 +237,150 @@
                         <button class="car-button">Audi A1 S-Line</button>
                         <button class="car-button">VW Golf 6</button>
                         <button class="car-button">Toyota Camry</button>
-                        <button class="car-button">BMW 320</button>
-                        <button class="car-button">Mercedes GLK</button>
+                        <button class="car-button">BMW 320 Modernline</button>
+                        <button class="car-button">Mercedes-Benz GLK</button>
                         <button class="car-button">VW Passat CC</button>
                     </div>
                 </div>
 
                 <div class="col-md-7">
                     <div class="cars-images-cont">
-                        <img src="images/vw2.png" id="car-image" alt="car-photo">
+                        <img src="images/audia1.jpg" id="car-image" alt="car-photo">
                     </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-2">
+                        <table id="car-info">
+
+                                <th colspan="2"><span class="bold-price">$45</span> / rent per day</th>
+
+                            <tr>
+                                <td>Brand</td>
+                                <td>Audi</td>
+                            </tr>
+                            <tr>
+                                <td>Model</td>
+                                <td>A1</td>
+                            </tr>
+                            <tr>
+                                <td>Year</td>
+                                <td>2012</td>
+                            </tr>
+                            <tr>
+                                <td>Doors</td>
+                                <td>4/5</td>
+                            </tr>
+                            <tr>
+                                <td>Wheel</td>
+                                <td>Left</td>
+                            </tr>
+                            <tr>
+                                <td>Transmission</td>
+                                <td>Manual</td>
+                            </tr>
+                            <tr>
+                                <td>Fuel</td>
+                                <td>Gasoline</td>
+                            </tr>
+                        </table>
+
+                        <button class="reserve-now-btn">RESERVE NOW</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="why-choose-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" id="cars-cont">
+                    <img src="images/pngimg.com - mitsubishi_PNG191.png" alt="cars" class="three-cars">
                 </div>
             </div>
 
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="why-choose-us-mini-title">Why Choose Us</h3>
+
+                    <h1 class="wcu-big-title">Best valued deals you will ever find</h1>
+
+                    <p class="wcu-text">Discover the best deals you'll ever find with our unbeatable offers! <br> We're dedicated to providing you with the best value for your <br> money, so you can enjoy top-quality services and products without <br> breaking the bank. Our deals are designed to give you the ultimate <br> renting experience, so don't miss out on your chance to save big!</p>
+                
+                    <button id="find-details">
+                        Find Details
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="about-us-cont">
+                        <i class="fa-solid fa-earth-europe"></i>
+                        <div class="about-us-text-cont">
+                            <h1 class="about-us-title">Cross Country Drive</h1>
+                            <p class="about-us-text">Take your travelling experience to the next <br> level with our top-notch vehicles for your <br> cross-country adventures.</p>
+                        </div>
+                    </div>
+                    <div class="about-us-cont">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                        <div class="about-us-text-cont">
+                            <h1 class="about-us-title">All Inclusive Pricing</h1>
+                            <p class="about-us-text">Get everything you need in one convenient <br> transparent price with our all-inclusive <br> pricing policy.</p>
+                        </div>
+                    </div>
+                    <div class="about-us-cont">
+                        <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                        <div class="about-us-text-cont">
+                            <h1 class="about-us-title">No Hidden Charges</h1>
+                            <p class="about-us-text">Enjoy peace of mind with our no hidden <br> charges policy. We believe in transparent <br> and honest pricing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3 class="footer-title">CAR <span class="unbold">Rental</span></h3>
+                    <p class="footer-slogan">We offer a wide range of vehicles <br> for all your driving needs. We have the perfect car
+                        to meet your needs.</p>
+                    
+                    <div class="phone-number-cont">
+                        <i class="fa-sharp fa-solid fa-phone"></i>
+                        <p class="phone-number">+359 2 597 6279</p>
+                    </div>
+
+                    <div class="email-cont">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p class="email">seneca222@gmail.com</p>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+                    <h3 class="footer-title"><strong>WORKING HOURS</strong></h3>
+                    <p class="timetable">Mon - Fri: 9:00AM - 21:00PM</p>
+                    <p class="timetable">Sat: 9:00AM - 19:00PM</p>
+                    <p class="timetable">Sun: Closed</p>
+                </div>
+
+                <div class="col-md-4">
+                    <h3 class="footer-title"><strong>SUBSCRIPTION</strong></h3>
+                    <p class="subscribtion">Subscribe for the latest discounts and news from us!</p>
+                    <input type="email" class="email-input" placeholder="Enter Email Address">
+                    <button class="submit-newsletter">Submit</button>
+                </div>
+            </div>
         </div>
     </section>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
     <script>
         AOS.init({
             offset: 200,
