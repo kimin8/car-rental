@@ -33,8 +33,8 @@ li, a, .sign-in > button, .register > button  {
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 30px 10%;
+    align-items: center;
 }
 
 .logo-name {
@@ -43,7 +43,11 @@ header {
     color: black;
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
+}
+
+nav {
+    margin: 0;
 }
 
 .fa-car-on {
@@ -53,6 +57,7 @@ header {
 
 .nav-links {
     list-style: none;
+    text-align: center;
 }
 
 .nav-links li {
@@ -394,6 +399,11 @@ header {
 }
 
 .car-button:hover {
+    background-color: #0093d0;
+    color: white;
+}
+
+.car-button:focus {
     background-color: #0093d0;
     color: white;
 }
