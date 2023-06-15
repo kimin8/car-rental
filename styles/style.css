@@ -675,6 +675,10 @@ td {
         overflow-x: hidden;
     } */
 
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
     #footer-content {
         display: flex;
         flex-direction: column;
