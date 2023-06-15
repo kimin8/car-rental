@@ -13,6 +13,7 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Car Rental</title>
+    <link rel="icon" href="/images/car-on-solid.svg">
 </head>
 
 <body>
@@ -35,12 +36,18 @@
             <a href="#" class="sign-in"><button>Sign in</button></a>
             <a href="#" class="register"><button>Register</button></a>
         </div>
+
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
     </header>
 
     <section id="hero-page">
-        <div class="container1">
+        <div class="container">
             <div class="row">
-                <div class="col-md-7">
+                <div class="col-md-6" id="text-container">
                     <div class="text">
                         <p class="slogan">Plan your trip now</p>
                         <p class="big-text">Save <span class="colored-word">big</span> with our car rental</p>
@@ -59,7 +66,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-6">
                 <img src="images/hero-car.png" alt="car" class="car-picture">
             </div>
         </div>
@@ -159,54 +166,33 @@
             </div>
 
             <div class="row">
-                <div class="col-md-4" id="info-icon-container">
+                <div class="col-md-4" id="info-containers">
                     <i class="fa-solid fa-car-side" id="info-icon"></i>
-                </div>
-
-                <div class="col-md-4" id="info-icon-container">
-                    <i class="fa-sharp fa-solid fa-phone-volume" id="info-icon"></i>
-                </div>
-
-                <div class="col-md-4" id="info-icon-container">
-                    <i class="fa-solid fa-truck-fast" id="info-icon"></i>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-4">
                     <h3 class="info-titles">Select car</h3>
-                </div>
-
-                <div class="col-md-4">
-                    <h3 class="info-titles">Contact Operator</h3>
-                </div>
-
-                <div class="col-md-4">
-                    <h3 class="info-titles">Let's Drive</h3>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-4">
                     <p class="info-text">
                         We offer a wide range of vehicles for all <br> your driving needs. We have the perfect <br> car
                         to meet your needs.
                     </p>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-4" id="info-containers">
+                    <i class="fa-sharp fa-solid fa-phone-volume" id="info-icon"></i>
+                    <h3 class="info-titles">Contact Operator</h3>
                     <p class="info-text">
-                        Our knowledge and friendly <br> operators are always ready to help with <br> any questions or
+                        Our knowledgable and friendly <br> operators are always ready to help with <br> any questions or
                         concerns.
                     </p>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-4" id="info-containers">
+                    <i class="fa-solid fa-truck-fast" id="info-icon"></i>
+                    <h3 class="info-titles">Let's Drive</h3>
                     <p class="info-text">
                         When you're hitting the open road, <br> we've got you covered with our wide <br> range of cars.
                     </p>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -225,14 +211,14 @@
             </div>
 
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12" id="small-text">
                     <p class="vehicle-models-small-text">Choose from a variety of amazing vehicles to rent for your next
                         <br> adventure or business trip</p>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3" id="carousel">
                     <div class="cars-menu">
                         <button class="car-button">Audi A1 S-Line</button>
                         <button class="car-button">VW Golf 6</button>
@@ -250,7 +236,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-2">
+                    <div class="col-md-2" id="table">
                         <table id="car-info">
 
                                 <th colspan="2"><span class="bold-price">$45</span> / rent per day</th>
@@ -302,12 +288,12 @@
             </div>
 
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6" id="why-choose-content">
                     <h3 class="why-choose-us-mini-title">Why Choose Us</h3>
 
                     <h1 class="wcu-big-title">Best valued deals you will ever find</h1>
 
-                    <p class="wcu-text">Discover the best deals you'll ever find with our unbeatable offers! <br> We're dedicated to providing you with the best value for your <br> money, so you can enjoy top-quality services and products without <br> breaking the bank. Our deals are designed to give you the ultimate <br> renting experience, so don't miss out on your chance to save big!</p>
+                    <p class="wcu-text">Discover the best deals you'll ever find with our unbeatable offers! We're dedicated to providing you with the best value for your money, so you can enjoy top-quality services and products without breaking the bank. Our deals are designed to give you the ultimate renting experience, so don't miss out on your chance to save big!</p>
                 
                     <button id="find-details">
                         Find Details
@@ -315,7 +301,7 @@
                     </button>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-6" id="about-us-content">
                     <div class="about-us-cont">
                         <i class="fa-solid fa-earth-europe"></i>
                         <div class="about-us-text-cont">
@@ -344,8 +330,8 @@
 
     <section id="footer">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
+            <div class="row" id="footer-content">
+                <div class="col-md-4" id="contact-content">
                     <h3 class="footer-title">CAR <span class="unbold">Rental</span></h3>
                     <p class="footer-slogan">We offer a wide range of vehicles <br> for all your driving needs. We have the perfect car
                         to meet your needs.</p>
@@ -369,7 +355,7 @@
                     <p class="timetable">Sun: Closed</p>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-4" id="subscription-content">
                     <h3 class="footer-title"><strong>SUBSCRIPTION</strong></h3>
                     <p class="subscribtion">Subscribe for the latest discounts and news from us!</p>
                     <input type="email" class="email-input" placeholder="Enter Email Address">
