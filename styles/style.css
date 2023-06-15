@@ -787,6 +787,9 @@ td {
     .cars-images-cont {
         margin-bottom: 120px;
         margin-top: 40px;
+    }
+
+    .cars-images-cont, .big-text, .big-text-info, .info-titles, .vehicle-models-title, .vehicle-models-big-title, .why-choose-us-mini-title, .wcu-big-title, .about-us-title, .footer-title {
         overflow-x: unset;
     }
 
