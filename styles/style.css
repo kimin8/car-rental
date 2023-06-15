@@ -781,11 +781,13 @@ td {
     #car-image {
         width: 95%;
         height: auto;
+        
     }
 
     .cars-images-cont {
         margin-bottom: 120px;
         margin-top: 40px;
+        overflow-x: unset;
     }
 
     #carousel {
@@ -893,4 +895,9 @@ td {
     #info-icon, .fa-earth-europe, .fa-hand-holding-dollar, .fa-circle-dollar-to-slot  {
         text-shadow: none;
     }
+
+    /* #goToTopButton {
+        bottom: 25px;
+        right: 100px;
+    } */
 }
