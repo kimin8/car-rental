@@ -671,9 +671,9 @@ td {
 
 @media only screen and (max-width: 600px) {
 
-    /* * {
+    * {
         overflow-x: hidden;
-    } */
+    }
 
     ::-webkit-scrollbar {
         display: none;
@@ -888,5 +888,9 @@ td {
 
     .book-ride, .learn-more {
         width: 250px;
+    }
+
+    #info-icon, .fa-earth-europe, .fa-hand-holding-dollar, .fa-circle-dollar-to-slot  {
+        text-shadow: none;
     }
 }
