@@ -249,9 +249,7 @@ nav {
 }
 
 #book-a-car {
-    margin-top: 100px;
-    margin-left: 11px;
-    margin-bottom: 150px;
+    margin: 100px 30px 150px 30px;
 }
 
 #book {
@@ -273,7 +271,7 @@ nav {
 
 .search {
     width: 100%;
-    padding: 12px 0px;
+    height: 63%;
     border: none;
     cursor: pointer;
     transition: all 0.3s ease 0s;
@@ -288,6 +286,13 @@ nav {
     -webkit-box-shadow: 1px 4px 16px -3px rgba(0,147,208,1);
     -moz-box-shadow: 1px 4px 16px -3px rgba(0,147,208,1);
     box-shadow: 1px 4px 16px -3px rgba(0,147,208,1);
+}
+
+.car-options-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 70px;
+    row-gap: 40px;
 }
 
 
@@ -494,6 +499,8 @@ td {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0px 15px;
+    padding: 0;
 }
 
 #why-choose-us {
@@ -665,7 +672,7 @@ td {
 
     header {
         margin-top: 30px;
-        margin-bottom: 100px;
+        margin-bottom: 60px;
     }
 }
 
@@ -779,9 +786,8 @@ td {
     }
 
     #car-image {
-        width: 95%;
+        width: 85%;
         height: auto;
-        
     }
 
     .cars-images-cont {
@@ -789,7 +795,7 @@ td {
         margin-top: 40px;
     }
 
-    .text, .cars-images-cont, .big-text, .big-text-info, .info-titles, .vehicle-models-title, .vehicle-models-big-title, .why-choose-us-mini-title, .wcu-big-title, .about-us-title, .footer-title {
+    #book > div:nth-child(2) > div, .text, .cars-images-cont, .big-text, .big-text-info, .info-titles, .vehicle-models-title, .vehicle-models-big-title, .why-choose-us-mini-title, .wcu-big-title, .about-us-title, .footer-title {
         overflow-x: unset;
     }
 
@@ -846,10 +852,6 @@ td {
         margin-bottom: 100px;
     }
 
-    .search {
-        width: 300px;
-    }
-
     .company-name {
         font-size: 23px;
     }
@@ -899,8 +901,30 @@ td {
         text-shadow: none;
     }
 
-    /* #goToTopButton {
-        bottom: 25px;
-        right: 100px;
-    } */
+    .car-options-container {
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .car-option-container, .search {
+        width: 90%;
+    }
+
+    #book {
+        padding: 60px 30px;
+        width: 100%;
+    }
+    
+    .search {
+        height: 45px;
+        top: 0;
+    }
+
+    .book-a-car-title {
+        text-align: center;
+        margin-bottom: 50px;
+    }
 }
