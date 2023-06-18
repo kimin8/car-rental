@@ -254,7 +254,7 @@ nav {
 
 #book {
     background-color: #fff;
-    background-image: url(/images/background-details.png);
+    background-image: url('../images/background-details.png');
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
