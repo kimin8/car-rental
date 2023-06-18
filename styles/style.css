@@ -644,6 +644,7 @@ td {
     padding: 10px 47px;
     margin-bottom: 15px;
     border: 1px solid black;
+    border-radius: 4px;
 }
 
 .submit-newsletter {
@@ -653,6 +654,14 @@ td {
     width: 260px;
     height: 41px;
     border-radius: 4px;
+}
+
+
+.newsteller {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .submit-newsletter:hover {
