@@ -3,6 +3,8 @@ logo.onclick = () => {
   window.location.href = "/index.html";
 }
 
+
+// Kato zaredi te prashta do tam ama ne trqbva
 window.onload = () => {
   document.querySelector('#carousel > div > button:nth-child(1)').focus();
 }
