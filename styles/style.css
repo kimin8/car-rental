@@ -657,14 +657,6 @@ td {
     border-radius: 4px;
 }
 
-
-.newsteller {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
 .submit-newsletter:hover {
     -webkit-box-shadow: 1px 4px 16px -3px rgba(0,147,208,1);
     -moz-box-shadow: 1px 4px 16px -3px rgba(0,147,208,1);
@@ -936,5 +928,12 @@ td {
     .book-a-car-title {
         text-align: center;
         margin-bottom: 50px;
+    }
+
+    .newsteller {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
