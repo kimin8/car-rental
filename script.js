@@ -1,6 +1,6 @@
 let logo = document.querySelector(".logo-name");
 logo.onclick = () => {
-    window.location.href = "/main.html";
+    window.location.href = "/index.html";
 }
 
 let price = document.querySelector('#car-info > tbody > tr:nth-child(1) > th > span');

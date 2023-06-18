@@ -795,7 +795,7 @@ td {
         margin-top: 40px;
     }
 
-    #book > div:nth-child(2) > div, .text, .cars-images-cont, .big-text, .big-text-info, .info-titles, .vehicle-models-title, .vehicle-models-big-title, .why-choose-us-mini-title, .wcu-big-title, .about-us-title, .footer-title {
+    #book > div:nth-child(2) > div, .cars-images-cont, .big-text, .big-text-info, .info-titles, .vehicle-models-title, .vehicle-models-big-title, .why-choose-us-mini-title, .wcu-big-title, .about-us-title, .footer-title {
         overflow-x: unset;
     }
 
