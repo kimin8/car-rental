@@ -433,6 +433,7 @@ nav {
 .car-button:focus {
     background-color: #0093d0;
     color: white;
+    outline: none;
 }
 
 .cars-images-cont {

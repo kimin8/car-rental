@@ -1,6 +1,10 @@
 let logo = document.querySelector(".logo-name");
 logo.onclick = () => {
-    window.location.href = "/index.html";
+  window.location.href = "/index.html";
+}
+
+window.onload = () => {
+  document.querySelector('#carousel > div > button:nth-child(1)').focus();
 }
 
 let price = document.querySelector('#car-info > tbody > tr:nth-child(1) > th > span');
@@ -13,81 +17,23 @@ let wheelField = document.getElementById('wheel');
 let transmissionField = document.getElementById('transmission');
 let fuelField = document.getElementById('fuel');
 
-let audia1 = document.querySelector('#vehicle-models > div > div:nth-child(4) > div.col-md-3 > div > button:nth-child(1)');
-let vw1 = document.querySelector('#vehicle-models > div > div:nth-child(4) > div.col-md-3 > div > button:nth-child(2)');
-let toyota = document.querySelector('#vehicle-models > div > div:nth-child(4) > div.col-md-3 > div > button:nth-child(3)');
-let bmw = document.querySelector('#vehicle-models > div > div:nth-child(4) > div.col-md-3 > div > button:nth-child(4)');
-let mercedes = document.querySelector('#vehicle-models > div > div:nth-child(4) > div.col-md-3 > div > button:nth-child(5)');
-let vw2 = document.querySelector('#vehicle-models > div > div:nth-child(4) > div.col-md-3 > div > button:nth-child(6)');
+const buttons = Array.from(document.querySelector('#carousel > div').children);
 
-audia1.addEventListener("click", () => {
-  carPicture.src = "images/audia1.jpg";
-  price.textContent = "$45";
-  brandField.textContent = "Audi";
-  modelField.textContent = "A1";
-  yearField.textContent = "2012";
-  doorsField.textContent = "4/5";
-  wheelField.textContent = "Left";
-  transmissionField.textContent = "Manual";
-  fuelField.textContent = "Gasoline";
-});
-
-vw1.addEventListener("click", () => {
-  carPicture.src = "images/golf1.jpg";
-  price.textContent = "$37";
-  brandField.textContent = "Volkswagen";
-  modelField.textContent = "Golf 6";
-  yearField.textContent = "2008";
-  doorsField.textContent = "4/5";
-  wheelField.textContent = "Right";
-  transmissionField.textContent = "Manual";
-  fuelField.textContent = "Diesel";
-});
-
-toyota.addEventListener("click", () => {
-  carPicture.src = "images/toyotacamry.jpg";
-  price.textContent = "$30";
-  brandField.textContent = "Toyota";
-  modelField.textContent = "Camry";
-  yearField.textContent = "2006";
-  doorsField.textContent = "4/5";
-  wheelField.textContent = "Left";
-  transmissionField.textContent = "Automatic";
-  fuelField.textContent = "Hybrid";
-});
-
-bmw.addEventListener("click", () => {
-  carPicture.src = "images/bmw320.jpg";
-  price.textContent = "$35";
-  brandField.textContent = "BMW";
-  modelField.textContent = "320";
-  yearField.textContent = "2012";
-  doorsField.textContent = "4/5";
-  wheelField.textContent = "Left";
-  transmissionField.textContent = "Manual";
-  fuelField.textContent = "Diesel";
-});
-
-mercedes.addEventListener("click", () => {
-  carPicture.src = "images/mercedes-benz.jpg";
-  price.textContent = "$50";
-  brandField.textContent = "Mercedes";
-  modelField.textContent = "Benz GLK";
-  yearField.textContent = "2006";
-  doorsField.textContent = "4/5";
-  wheelField.textContent = "Right";
-  transmissionField.textContent = "Manual";
-  fuelField.textContent = "Diesel";
-});
-
-vw2.addEventListener("click", (e) => {
-  carPicture.src = "images/golf2.jpg";
-  price.textContent = "$25";
-  brandField.textContent = "Volkswagen";
-  modelField.textContent = "Passat CC";
-  yearField.textContent = "2008";
-  doorsField.textContent = "4/5";
-  wheelField.textContent = "Right";
-  transmissionField.textContent = "Automatic";
-  fuelField.textContent = "Gasoline";
-});
+for (let i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener('click', () => {
+    fetch('https://car-rental-eeeb6-default-rtdb.europe-west1.firebasedatabase.app/.json')
+      .then(response => response.json())
+      .then(carInfo => {
+        const carInfoArray = Object.values(carInfo);
+        carPicture.src = carInfoArray[i].image;
+        price.textContent = carInfoArray[i].price;
+        brandField.textContent = carInfoArray[i].brand;
+        modelField.textContent = carInfoArray[i].model;
+        yearField.textContent = carInfoArray[i].year;
+        doorsField.textContent = carInfoArray[i].doors;
+        wheelField.textContent = carInfoArray[i].wheel;
+        transmissionField.textContent = carInfoArray[i].transmission;
+        fuelField.textContent = carInfoArray[i].fuel;
+      });
+  })
+}

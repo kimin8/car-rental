@@ -1,0 +1,68 @@
+{
+    "audia1": {
+        "image": "images/audia1.jpg",
+        "price": "$45",
+        "brand": "Audi",
+        "model": "A1",
+        "year": "2012",
+        "doors": "4/5",
+        "wheel": "Left",
+        "transmission": "Manual",
+        "fuel": "Gasoline"
+    },
+    "vwgolf6": {
+        "image": "images/golf1.jpg",
+        "price": "$37",
+        "brand": "Volkswagen",
+        "model": "Golf 6",
+        "year": "2008",
+        "doors": "4/5",
+        "wheel": "Right",
+        "transmission": "Manual",
+        "fuel": "Diesel"
+    },
+    "toyotacamry": {
+        "image": "images/toyotacamry.jpg",
+        "price": "$30",
+        "brand": "Toyota",
+        "model": "Camry",
+        "year": "2006",
+        "doors": "4/5",
+        "wheel": "Left",
+        "transmission": "Automatic",
+        "fuel": "Hybrid"
+    },
+    "bmw320": {
+        "image": "images/bmw320.jpg",
+        "price": "$35",
+        "brand": "BMW",
+        "model": "320",
+        "year": "2012",
+        "doors": "4/5",
+        "wheel": "Left",
+        "transmission": "Automatic",
+        "fuel": "Diesel"
+    },
+    "mercedes": {
+        "image": "images/mercedes-benz.jpg",
+        "price": "$50",
+        "brand": "Mercedes",
+        "model": "Benz GLK",
+        "year": "2006",
+        "doors": "4/5",
+        "wheel": "Right",
+        "transmission": "Manual",
+        "fuel": "Diesel"
+    },
+    "vwpassat": {
+        "image": "images/golf2.jpg",
+        "price": "$25",
+        "brand": "Volkswagen",
+        "model": "Passat CC",
+        "year": "2008",
+        "doors": "4/5",
+        "wheel": "Right",
+        "transmission": "Automatic",
+        "fuel": "Gasoline"
+    }
+}
