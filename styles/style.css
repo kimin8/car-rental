@@ -113,10 +113,48 @@ nav {
 }
 
 .bar {
-    height: 3px;
+    height: 4px;
     width: 100%;
     background-color: black;
     border-radius: 10px;
+}
+
+#curtain {
+    display: none;
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+}
+
+.fa-xmark {
+    font-size: 40px;
+    position: absolute;
+    top: 30px;
+    right: 40px;
+}
+
+.links {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    overflow-x: hidden;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+.links li {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.links li a {
+    font-size: 2rem;
+    overflow-x: hidden;
 }
 
 #hero-page {
@@ -651,6 +689,15 @@ td {
         overflow-x: hidden;
     }
 
+    body {
+        max-width: 100vw; overflow-x: hidden; 
+    }
+
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
     ::-webkit-scrollbar {
         display: none;
     }
@@ -759,6 +806,15 @@ td {
         height: auto;
     }
 
+    #vehicle-models > div > div:nth-child(4) > div.col-md-7 {
+        padding: 0px;
+    }
+
+    #carousel {
+        padding: 0;
+        margin: 0 10px;
+    }
+
     .cars-images-cont {
         margin-bottom: 120px;
         margin-top: 40px;
@@ -834,6 +890,14 @@ td {
         display: none;
     }
 
+    /* #hero-page {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    } */
+
     #text-container {
         padding: 0;
         display: flex;
@@ -902,5 +966,13 @@ td {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    #car-image-container {
+        display: none;
+    }
+
+    .car-picture {
+        display: none;
     }
 }
