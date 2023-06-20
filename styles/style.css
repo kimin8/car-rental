@@ -223,29 +223,7 @@ nav {
 
 .car-picture {
     height: auto;
-}
-
-#goToTopButton {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    background-color: #0093d0;
-    color: #fff;
-    cursor: pointer;
-    padding: 10px 15px;
-    font-size: 18px;
-}
-
-.fa-arrow-up {
-    color: white;
-}
-
-#goToTopButton:hover {
-    background-color: blue;
+    width: 100%;
 }
 
 #book-a-car {
@@ -423,17 +401,6 @@ nav {
     font-weight: bold;
     width: 260px;
     margin-left: -50px;
-}
-
-.car-button:hover {
-    background-color: #0093d0;
-    color: white;
-}
-
-.car-button:focus {
-    background-color: #0093d0;
-    color: white;
-    outline: none;
 }
 
 .cars-images-cont {

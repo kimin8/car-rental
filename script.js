@@ -3,12 +3,6 @@ logo.onclick = () => {
   window.location.href = "/index.html";
 }
 
-
-// Kato zaredi te prashta do tam ama ne trqbva
-window.onload = () => {
-  document.querySelector('#carousel > div > button:nth-child(1)').focus();
-}
-
 let price = document.querySelector('#car-info > tbody > tr:nth-child(1) > th > span');
 let carPicture = document.getElementById('car-image');
 let brandField = document.getElementById('brand');
@@ -23,6 +17,15 @@ const buttons = Array.from(document.querySelector('#carousel > div').children);
 
 for (let i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener('click', () => {
+
+    buttons.forEach(button => {
+      button.style.backgroundColor = "#e9e9e9";
+      button.style.color = "black";
+    });
+
+    buttons[i].style.backgroundColor = "#0093d0";
+    buttons[i].style.color = "white";
+
     fetch('https://car-rental-eeeb6-default-rtdb.europe-west1.firebasedatabase.app/.json')
       .then(response => response.json())
       .then(carInfo => {
