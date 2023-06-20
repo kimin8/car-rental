@@ -124,6 +124,7 @@ nav {
     background-color: white;
     height: 100vh;
     width: 100vw;
+    position: sticky;
 }
 
 .fa-xmark {
@@ -690,7 +691,8 @@ td {
     }
 
     body {
-        max-width: 100vw; overflow-x: hidden; 
+        max-width: 100vw;
+        overflow-x: hidden; 
     }
 
     html, body {
