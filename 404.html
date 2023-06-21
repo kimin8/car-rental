@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Page not found</title>
+    <link rel="icon" href="/images/car-on-solid.svg">
+    <link rel="stylesheet" href="./styles/reset.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            font-family: 'Montserrat', sans-serif;
+            color: black;
+            text-align: center;
+        }
+
+        #main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            height: 100vh;
+        }
+
+        .error-code {
+            font-size: 27rem;
+            margin-bottom: -60px;
+        }
+
+        .blue {
+            color: #0093d0;
+        }
+
+        .message {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .go-back>button {
+            padding: 11px 30px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+            background-color: #0093d0;
+            color: white;
+            font-weight: bold;
+        }
+
+        .go-back>button:hover {
+            -webkit-box-shadow: 1px 4px 16px -3px rgba(0, 147, 208, 1);
+            -moz-box-shadow: 1px 4px 16px -3px rgba(0, 147, 208, 1);
+            box-shadow: 1px 4px 16px -3px rgba(0, 147, 208, 1);
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" id="main">
+                    <p class="error-code">4<span class="blue">0</span>4</p>
+                    <p class="message">The page you are looking for was not found :(</p>
+                    <a href="index.html" class="go-back"><button>Go Home</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
