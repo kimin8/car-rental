@@ -24,7 +24,10 @@ html {
     border-radius: 10px;
 }
 
-li, a, .sign-in > button, .register > button  {
+li,
+a,
+.sign-in>button,
+.register>button {
     font-size: 16px;
     color: black;
     text-decoration: none;
@@ -75,7 +78,7 @@ nav {
     color: #0093d0;
 }
 
-.register > button {
+.register>button {
     padding: 9px 25px;
     border: none;
     border-radius: 4px;
@@ -85,13 +88,13 @@ nav {
     color: white;
 }
 
-.register > button:hover {
-    -webkit-box-shadow: 1px 4px 16px -3px rgba(0,147,208,1);
-    -moz-box-shadow: 1px 4px 16px -3px rgba(0,147,208,1);
-    box-shadow: 1px 4px 16px -3px rgba(0,147,208,1);
+.register>button:hover {
+    -webkit-box-shadow: 1px 4px 16px -3px rgba(0, 147, 208, 1);
+    -moz-box-shadow: 1px 4px 16px -3px rgba(0, 147, 208, 1);
+    box-shadow: 1px 4px 16px -3px rgba(0, 147, 208, 1);
 }
 
-.sign-in > button {
+.sign-in>button {
     border: none;
     padding: 9px 25px;
     border: 8px;
@@ -99,7 +102,7 @@ nav {
     background-color: white;
 }
 
-.sign-in > button:hover {
+.sign-in>button:hover {
     transition: all 0.3 ease 0s;
     color: #0093d0;
 }
@@ -166,13 +169,13 @@ nav {
     justify-content: center;
 }
 
-#hero-page > div {
+#hero-page>div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.text  {
+.text {
     width: 490px;
 }
 
@@ -203,7 +206,8 @@ nav {
     gap: 20px;
 }
 
-.book-ride, .learn-more {
+.book-ride,
+.learn-more {
     margin-top: 15px;
     width: 170px;
     height: 50px;
@@ -222,9 +226,9 @@ nav {
 }
 
 .book-ride:hover {
-    -webkit-box-shadow: 1px 4px 16px -3px rgba(0,147,208,1);
-    -moz-box-shadow: 1px 4px 16px -3px rgba(0,147,208,1);
-    box-shadow: 1px 4px 16px -3px rgba(0,147,208,1);
+    -webkit-box-shadow: 1px 4px 16px -3px rgba(0, 147, 208, 1);
+    -moz-box-shadow: 1px 4px 16px -3px rgba(0, 147, 208, 1);
+    box-shadow: 1px 4px 16px -3px rgba(0, 147, 208, 1);
     text-decoration: none;
     color: white;
 }
@@ -248,9 +252,9 @@ nav {
 }
 
 .learn-more:hover {
-    -webkit-box-shadow: 6px 7px 16px -5px rgba(0,0,0,0.78);
-    -moz-box-shadow: 6px 7px 16px -5px rgba(0,0,0,0.78);
-    box-shadow: 6px 7px 16px -5px rgba(0,0,0,0.78);
+    -webkit-box-shadow: 6px 7px 16px -5px rgba(0, 0, 0, 0.78);
+    -moz-box-shadow: 6px 7px 16px -5px rgba(0, 0, 0, 0.78);
+    box-shadow: 6px 7px 16px -5px rgba(0, 0, 0, 0.78);
     text-decoration: none;
     color: white;
 }
@@ -300,9 +304,9 @@ nav {
 }
 
 .search:hover {
-    -webkit-box-shadow: 1px 4px 16px -3px rgba(0,147,208,1);
-    -moz-box-shadow: 1px 4px 16px -3px rgba(0,147,208,1);
-    box-shadow: 1px 4px 16px -3px rgba(0,147,208,1);
+    -webkit-box-shadow: 1px 4px 16px -3px rgba(0, 147, 208, 1);
+    -moz-box-shadow: 1px 4px 16px -3px rgba(0, 147, 208, 1);
+    box-shadow: 1px 4px 16px -3px rgba(0, 147, 208, 1);
 }
 
 .car-options-container {
@@ -315,9 +319,10 @@ nav {
 
 .empty-space {
     height: 35px;
-} 
+}
 
-.header-car-title, .search {
+.header-car-title,
+.search {
     margin-bottom: 10px;
 }
 
@@ -336,13 +341,16 @@ nav {
     color: red;
 }
 
-#dropof-date, #pickup-date {
+#dropof-date,
+#pickup-date {
     width: 100%;
     height: 45px;
     padding-left: 10px;
 }
 
-.fa-car, .fa-location-dot, .fa-calendar-days {
+.fa-car,
+.fa-location-dot,
+.fa-calendar-days {
     color: #0093d0;
     margin-right: 3px;
 }
@@ -374,7 +382,7 @@ nav {
     color: #0093d0;
     margin-bottom: 70px;
     font-size: 50px;
-    text-shadow: 0px 0px 44px rgba(0,147,208,1);
+    text-shadow: 0px 0px 44px rgba(0, 147, 208, 1);
 }
 
 .info-titles {
@@ -455,7 +463,9 @@ nav {
     top: 40px;
 }
 
-#car-info, th, td {
+#car-info,
+th,
+td {
     border: 1px solid black;
     border-collapse: collapse;
 }
@@ -497,9 +507,9 @@ td {
 }
 
 .reserve-now-btn:hover {
-    -webkit-box-shadow: 1px 4px 16px -3px rgba(0,147,208,1);
-    -moz-box-shadow: 1px 4px 16px -3px rgba(0,147,208,1);
-    box-shadow: 1px 4px 16px -3px rgba(0,147,208,1);
+    -webkit-box-shadow: 1px 4px 16px -3px rgba(0, 147, 208, 1);
+    -moz-box-shadow: 1px 4px 16px -3px rgba(0, 147, 208, 1);
+    box-shadow: 1px 4px 16px -3px rgba(0, 147, 208, 1);
 }
 
 #cars-cont {
@@ -552,15 +562,17 @@ td {
 }
 
 #find-details:hover {
-    -webkit-box-shadow: 1px 4px 16px -3px rgba(0,147,208,1);
-    -moz-box-shadow: 1px 4px 16px -3px rgba(0,147,208,1);
-    box-shadow: 1px 4px 16px -3px rgba(0,147,208,1);
+    -webkit-box-shadow: 1px 4px 16px -3px rgba(0, 147, 208, 1);
+    -moz-box-shadow: 1px 4px 16px -3px rgba(0, 147, 208, 1);
+    box-shadow: 1px 4px 16px -3px rgba(0, 147, 208, 1);
 }
 
-.fa-earth-europe, .fa-hand-holding-dollar, .fa-circle-dollar-to-slot {
+.fa-earth-europe,
+.fa-hand-holding-dollar,
+.fa-circle-dollar-to-slot {
     color: #0093d0;
     font-size: 40px;
-    text-shadow: 0px 0px 44px rgba(0,147,208,1);
+    text-shadow: 0px 0px 44px rgba(0, 147, 208, 1);
 }
 
 .about-us-cont {
@@ -626,7 +638,7 @@ td {
     font-size: 18px;
 }
 
-#footer > div > div > div:nth-child(2) > p:nth-child(2) {
+#footer>div>div>div:nth-child(2)>p:nth-child(2) {
     margin-top: 20px;
 }
 
@@ -664,9 +676,9 @@ td {
 }
 
 .submit-newsletter:hover {
-    -webkit-box-shadow: 1px 4px 16px -3px rgba(0,147,208,1);
-    -moz-box-shadow: 1px 4px 16px -3px rgba(0,147,208,1);
-    box-shadow: 1px 4px 16px -3px rgba(0,147,208,1);
+    -webkit-box-shadow: 1px 4px 16px -3px rgba(0, 147, 208, 1);
+    -moz-box-shadow: 1px 4px 16px -3px rgba(0, 147, 208, 1);
+    box-shadow: 1px 4px 16px -3px rgba(0, 147, 208, 1);
 }
 
 @media only screen and (max-width: 1250px) {
@@ -674,7 +686,9 @@ td {
         display: flex;
     }
 
-    .nav-links, .register, .sign-in {
+    .nav-links,
+    .register,
+    .sign-in {
         display: none;
     }
 
@@ -692,10 +706,11 @@ td {
 
     body {
         max-width: 100vw;
-        overflow-x: hidden; 
+        overflow-x: hidden;
     }
 
-    html, body {
+    html,
+    body {
         max-width: 100%;
         overflow-x: hidden;
     }
@@ -715,7 +730,9 @@ td {
         font-size: 28px;
     }
 
-    .footer-slogan, .phone-number-cont, .email-cont {
+    .footer-slogan,
+    .phone-number-cont,
+    .email-cont {
         text-align: center;
     }
 
@@ -730,7 +747,7 @@ td {
         text-align: center;
     }
 
-    #footer > div > div > div:nth-child(2) > p:nth-child(4) {
+    #footer>div>div>div:nth-child(2)>p:nth-child(4) {
         margin-bottom: 30px;
     }
 
@@ -768,7 +785,7 @@ td {
     .about-us-text {
         font-size: 15px;
     }
-    
+
     #about-us-content {
         display: flex;
         flex-direction: column;
@@ -808,7 +825,7 @@ td {
         height: auto;
     }
 
-    #vehicle-models > div > div:nth-child(4) > div.col-md-7 {
+    #vehicle-models>div>div:nth-child(4)>div.col-md-7 {
         padding: 0px;
     }
 
@@ -822,7 +839,17 @@ td {
         margin-top: 40px;
     }
 
-    #book > div:nth-child(2) > div, .cars-images-cont, .big-text, .big-text-info, .info-titles, .vehicle-models-title, .vehicle-models-big-title, .why-choose-us-mini-title, .wcu-big-title, .about-us-title, .footer-title {
+    #book>div:nth-child(2)>div,
+    .cars-images-cont,
+    .big-text,
+    .big-text-info,
+    .info-titles,
+    .vehicle-models-title,
+    .vehicle-models-big-title,
+    .why-choose-us-mini-title,
+    .wcu-big-title,
+    .about-us-title,
+    .footer-title {
         overflow-x: unset;
     }
 
@@ -852,7 +879,7 @@ td {
         width: 90%;
         margin-bottom: 40px;
     }
-    
+
     #small-text {
         display: flex;
         justify-content: center;
@@ -869,8 +896,8 @@ td {
     #info-containers {
         margin-bottom: 80px;
     }
-    
-    #info > div > div:nth-child(3) > div:nth-child(3) {
+
+    #info>div>div:nth-child(3)>div:nth-child(3) {
         margin-bottom: 0;
     }
 
@@ -888,7 +915,7 @@ td {
         padding-bottom: 0;
     }
 
-    #hero-page > div > div.col-md-6 {
+    #hero-page>div>div.col-md-6 {
         display: none;
     }
 
@@ -928,11 +955,15 @@ td {
         text-align: center;
     }
 
-    .book-ride, .learn-more {
+    .book-ride,
+    .learn-more {
         width: 250px;
     }
 
-    #info-icon, .fa-earth-europe, .fa-hand-holding-dollar, .fa-circle-dollar-to-slot  {
+    #info-icon,
+    .fa-earth-europe,
+    .fa-hand-holding-dollar,
+    .fa-circle-dollar-to-slot {
         text-shadow: none;
     }
 
@@ -944,7 +975,8 @@ td {
         justify-content: center;
     }
 
-    .car-option-container, .search {
+    .car-option-container,
+    .search {
         width: 90%;
     }
 
@@ -952,7 +984,7 @@ td {
         padding: 60px 30px;
         width: 100%;
     }
-    
+
     .search {
         height: 45px;
         top: 0;
