@@ -21,8 +21,8 @@
         <i class="fa-sharp fa-solid fa-xmark"></i>
 
         <ul class="links">
-            <li><a href="/main.html">Home</a></li>
-            <li><a href="#info">About</a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
             <li><a href="#vehicle-models">Vehicle Models</a></li>
             <li><a href="#footer">Contact</a></li>
             <li><a href="#sign-in">Sign in</a></li>
@@ -38,8 +38,8 @@
 
         <nav>
             <ul class="nav-links">
-                <li><a href="/main.html">Home</a></li>
-                <li><a href="#info">About</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
                 <li><a href="#vehicle-models">Vehicle Models</a></li>
                 <li><a href="#footer">Contact</a></li>
             </ul>
@@ -60,7 +60,7 @@
 
     <section id="hero-page">
         <div class="container">
-            <div class="row">
+            <div class="row" id="hero-row">
                 <div class="col-md-4" id="text-container">
                     <div class="text">
                         <p class="slogan">Plan your trip now</p>
@@ -79,9 +79,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-8" id="car-image-container">
-                <img src="images/hero-car.png" alt="car" class="car-picture">
+
+                <div class="col-md-8" id="car-image-container">
+                    <img src="images/hero-car.png" alt="car" class="car-picture">
+                </div>
             </div>
         </div>
     </section>
@@ -402,7 +403,7 @@
     </section>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="script.js"></script>
+    <script src="./src/script.js"></script>
     <script>
         AOS.init({
             offset: 200,
