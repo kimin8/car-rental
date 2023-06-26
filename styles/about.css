@@ -560,14 +560,24 @@ nav {
 
     #phone-text {
         font-size: 2rem;
+        margin-left: 30px;
+        width: 90%;
     }
 
     .phone-number-container {
-        gap: 0;
+        margin-right: 30px;
     }
 
     .fa-phone-volume, .phone-number-blue {
-        font-size: 1.5rem;
+        font-size: 2rem;
+    }
+
+    .phone-number-blue {
+        width: 28rem;
+    }
+
+    #get-in-touch > div.phone-cont > div > i {
+        display: none;
     }
 
     .newsteller {
