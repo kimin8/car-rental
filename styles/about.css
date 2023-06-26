@@ -525,4 +525,55 @@ nav {
     .fa-circle-dollar-to-slot {
         text-shadow: none;
     }
+
+    #hero {
+        margin-top: 30px;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        margin: 0 20px;
+    }
+
+    #information {
+        width: 30rem;
+    }
+
+    .slogan, .big-title, .small-text {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .icons {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #info {
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
+    
+    .big-text-info {
+        margin-bottom: 6rem;
+    }
+
+    #phone-text {
+        font-size: 2rem;
+    }
+
+    .phone-number-container {
+        gap: 0;
+    }
+
+    .fa-phone-volume, .phone-number-blue {
+        font-size: 1.5rem;
+    }
+
+    .newsteller {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
