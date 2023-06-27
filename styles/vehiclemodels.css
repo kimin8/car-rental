@@ -161,126 +161,154 @@ nav {
     overflow-x: hidden;
 }
 
-#hero {
-    margin-top: 50px;
+.title {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: black;
+    font-weight: 700;
+    font-size: 4rem;
 }
 
-.hero-container {
+.car-display-cont {
+    margin-bottom: 100px;
+}
+
+.car-card {
+    border: 1px solid #d5d5d5;
+    width: 38rem;
+    margin-left: 20px;
+}
+
+.image-container {
+    border-bottom: 1px solid #d5d5d5;
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 7rem;
+    align-items: center;
+    min-height: 25rem;
 }
 
-#picture {
-    width: 72rem;
-    border-radius: 20px;
+.image-container > img {
+    width: 90%;
+    height: 100%;
 }
 
-#information {
-    width: 60rem;
-}
-
-.slogan {
-    font-size: 3rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-}
-
-.big-title {
-    font-size: 4.1rem;
-    font-weight: 800;
-    line-height: 1.1;
-}
-
-.small-text {
-    color: #706f7b;
-    font-size: 1.6rem;
-    line-height: 1.5;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-}
-
-.icons {
+.info-sections-container {
     display: flex;
     justify-content: space-between;
 }
 
-.car-types {
+.car-name {
+    font-size: 2.7rem;
+    font-weight: 800;
+}
+
+.left {
+    margin: 20px 0px 0px 30px;
+}
+
+.stars {
+    color: #ffc933;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.right {
+    margin: 20px 30px 0px 0px;
+    text-align: end;
+}
+
+.price {
+    font-size: 2.7rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.per-day {
+    font-weight: 500;
+    font-size: 1.7rem;
+}
+
+.characteristics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 7rem;
+    row-gap: 2rem;
+    margin: 20px 30px 0px 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.characteristics > :nth-child(1), .characteristics > :nth-child(3) {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 13px;
+    justify-content: start;
     align-items: center;
-    justify-content: center;
-    padding: 15px 20px 0px 20px;
-    border: 5px solid #0093d0;
-    border-radius: 2rem;
-    gap: 10px;
 }
 
-.fa-calendar-days, .fa-warehouse, .fa-screwdriver-wrench {
-    font-size: 8rem;
-    color: #0093d0;
-}
-
-.numbers {
+.characteristics > :nth-child(2), .characteristics > :nth-child(4) {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    gap: 13px;
+    justify-content: end;
     align-items: center;
-    gap: 10px;
+    text-align: end;
 }
 
-.big-num {
-    font-size: 4rem;
-}
-
-.addition {
-    color: #706f7b;
-    font-size: 1.5rem;
-    line-height: 1.5;
-}
-
-#info {
-    margin-top: 210px;
-    margin-bottom: 196px;
-}
-
-.slogan-info {
-    text-align: center;
-    font-size: 20px;
+.fa-car-side {
     color: black;
+    font-size: 2rem;
 }
 
-.big-text-info {
-    font-weight: 700;
-    text-align: center;
-    margin-top: 12px;
-    margin-bottom: 100px;
+.char-text {
+    color: #777;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: left;
 }
 
-#info-containers {
+.book-container {
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.book-container > a {
+    width: 100%;
+    margin: 0 30px;
+}
+
+.button-book {
+    background-color: #0093d0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.button-book:hover {
+    -webkit-box-shadow: 1px 4px 16px -3px rgba(0, 147, 208, 1);
+    -moz-box-shadow: 1px 4px 16px -3px rgba(0, 147, 208, 1);
+    box-shadow: 1px 4px 16px -3px rgba(0, 147, 208, 1);
+}
+
+.car-display-cont {
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-#info-icon {
-    color: #0093d0;
-    margin-bottom: 70px;
-    font-size: 50px;
-    text-shadow: 0px 0px 44px rgba(0, 147, 208, 1);
-}
-
-.info-titles {
-    text-align: center;
-    margin-bottom: 30px;
-    font-weight: 700;
-}
-
-.info-text {
-    text-align: center;
-    font-size: 14px;
-    color: gray;
-    font-weight: 600;
+.car-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3rem;
+    row-gap: 5rem;
+    justify-content: center;
+    align-items: center;
 }
 
 #get-in-touch {
@@ -446,6 +474,10 @@ nav {
         overflow-x: hidden;
     }
 
+    .char-text, .fa-car-side, .char-cont {
+        overflow-x: unset;
+    }
+
     ::-webkit-scrollbar {
         display: none;
     }
@@ -493,69 +525,36 @@ nav {
         margin-bottom: 30px;
     }
 
-    #small-text {
+    #get-in-touch > div.phone-cont > div > i {
+        display: none;
+    }
+
+    .newsteller {
         display: flex;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
     }
 
-    #info-icon {
-        margin-bottom: 40px;
-    }
-
-    .info-titles {
-        margin-bottom: 10px;
-    }
-
-    #info-containers {
-        margin-bottom: 80px;
-    }
-
-    #info>div>div:nth-child(3)>div:nth-child(3) {
-        margin-bottom: 0;
-    }
-
-    .big-text-info {
-        font-size: 30px;
-        margin-bottom: 100px;
-    }
-
-    #info-icon,
-    .fa-earth-europe,
-    .fa-hand-holding-dollar,
-    .fa-circle-dollar-to-slot {
-        text-shadow: none;
-    }
-
-    #hero {
-        margin-top: 30px;
-    }
-
-    .hero-container {
-        flex-direction: column;
-        margin: 0 20px;
-    }
-
-    #information {
-        width: 30rem;
-    }
-
-    .slogan, .big-title, .small-text {
-        text-align: center;
-        margin-bottom: 3rem;
-    }
-
-    .icons {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    #info {
-        margin-top: 10rem;
-        margin-bottom: 10rem;
+    .title {
+        font-size: 3rem;
     }
     
-    .big-text-info {
-        margin-bottom: 6rem;
+    .car-display {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .car-card {
+        width: 32rem;
+        margin: 0;
+    }
+
+    .char-text {
+        font-size: 1.6rem;
     }
 
     #phone-text {
@@ -578,12 +577,5 @@ nav {
 
     #get-in-touch > div.phone-cont > div > i {
         display: none;
-    }
-
-    .newsteller {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
     }
 }
